@@ -16,6 +16,7 @@ backup_node_identity_and_id(){
 
 
 finish_node_config(){
+    sudo docker restart otnode
     sudo docker update --restart=always otnode
     sudo docker logs -f otnode
 }

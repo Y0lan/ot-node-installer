@@ -70,6 +70,7 @@ verify_config_file(){
 }
 
 init_node_install(){
+    mkdir $BACKUP_FOLDER
     echo
     echo "WAIT TO SEE YOUR NODE ON THE NETWORK....DO NOT EXIT UNTIL THEN!!!"
     echo
@@ -83,7 +84,6 @@ init_node_install(){
         -p 5278:5278 \
         -p 3000:3000 \
         -v ~/.origintrail_noderc:/ot-node/.origintrail_noderc quay.io/origintrail/otnode:release_mainnet
-    mkdir $BACKUP_FOLDER
 }
 
 
