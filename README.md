@@ -20,7 +20,8 @@
 
 ## configure the node
 `curl -fsSL https://raw.githubusercontent.com/Y0lan/ot-node-installer/main/setup-node.sh > $HOME/setup-node.sh && chmod +x setup-node.sh && vim setup-node.sh`
-
+## create the node
+`./setup-node.sh`
 ## run the node
 `sh -c "$(curl -fsSL https://raw.githubusercontent.com/Y0lan/ot-node-installer/main/backup-start.sh)"`
 
