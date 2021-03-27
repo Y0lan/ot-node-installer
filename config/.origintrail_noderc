@@ -1,0 +1,21 @@
+{
+   "blockchain": {
+     "implementations": [
+       {
+         "blockchain_title": "xDai",
+         "network_id": "xdai:mainnet",
+         "identity_filepath": "xdai_erc725_identity.json",
+         "dh_price_factor" : "DH_PRICE_FACTOR",
+         "node_wallet": "NODE_PUBLIC",
+         "node_private_key": "NODE_PRIVATE_KEY",
+         "management_wallet": "MANAGEMENT_WALLET_PUBLIC"
+       } 
+     ]
+   },
+   "network": {
+     "hostname": "HOSTNAME"
+     },
+   "initial_deposit_amount": "INITIAL_DEPOSIT_AMOUNT",
+   "dh_max_holding_time_in_minutes": HOLDING_TIME,
+   "dh_maximum_dataset_filesize_in_mb": 10
+}
