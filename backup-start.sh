@@ -12,6 +12,7 @@ backup_node_identity_and_id(){
 
     # ENCRYPT IT
     zip -r -e $HOME/backup.zip $BACKUP_FOLDER
+    ls -l $BACKUP_FOLDER/
 }
 
 
