@@ -86,22 +86,6 @@ init_node_install(){
     mkdir $BACKUP_FOLDER
 }
 
-backup_node_identity_and_id(){
-    # IDENTITY
-    docker cp otnode:/ot-node/data/xdai_erc725_identity.json $BACKUP_FOLDER/xdai_erc725_identity.json
-    # ID
-    docker cp otnode:/ot-node/data/identity.json $BACKUP_FOLDER/identity.json
-
-    # ENCRYPT IT
-    zip -r -e $HOME/backup.zip $BACKUP_FOLDER
-    rm -rf $BACKUP_FOLDER
-}
-
-
-finish_node_config(){
-    docker update --restart=always otnode
-    docker logs -f otnode
-}
 
 last_check(){
     echo "your holding time: $HOLDING_TIME"
@@ -124,7 +108,5 @@ get_boilerplate_configuration
 setup_config
 verify_config_file
 last_check
-#init_node_install
-#backup_node_identity_and_id
-#finish_node_config
+init_node_install
 echo "DONE"
