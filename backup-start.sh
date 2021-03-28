@@ -11,19 +11,22 @@ backup_node_identity_and_id(){
     sudo docker cp otnode:/ot-node/data/identity.json $BACKUP_FOLDER/identity.json
 
     # ENCRYPT IT
+    echo "ENCRYPTING YOUR NODES IDENTITY (TO GET BACK YOUR MONEY IN CASE YOUR SERVER CRASH)"
+    echo "ENTER A PASSWORD FOR THE BACKUP.ZIP FILE: "
     zip -r -e $HOME/backup.zip $BACKUP_FOLDER
     ls -l $BACKUP_FOLDER/
 }
 
 
 finish_node_config(){
+    echo "RESTARTING NODE"
     sudo docker restart otnode
     sudo docker update --restart=always otnode
-    sudo docker logs -f otnode
 }
 
 start_node(){
     sudo docker start otnode
+    sudo docker ps
     sudo docker logs otnode -f
 }
 
