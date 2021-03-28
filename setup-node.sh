@@ -96,6 +96,7 @@ last_check(){
     echo "node private key: $NODE_PRIVATE_KEY"
     echo "management wallet address: $MANAGEMENT_WALLET_PUBLIC"
     echo "initial deposit amount: $INITIAL_DEPOSIT_AMOUNT"
+    echo "public ip address: $IP_HOST"
     verify_config_file
     read -p "Are you sure? " -n 1 -r
     echo
