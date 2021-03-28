@@ -44,7 +44,7 @@ Next you will need:
 > 5000 XTRAC SENT = 5000000000000000000000
 
 
-
+---
 
 
 
@@ -52,7 +52,7 @@ Next you will need:
 ### 2 . SEND 2XDAI / 5000 XTRAC TO ACCOUNT 2 VIA METAMASK
 ![xdai](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmasterethereum.com%2Fwp-content%2Fuploads%2F2020%2F10%2FxDAI-Master-Blockchain-Online.jpg&f=1&nofb=1 "xdai")
 
-
+---
 ### 3. PREPARE THE SERVER WITH ALL THE SOFTWARE
 
 1. ssh into your server with root@ip
@@ -62,12 +62,14 @@ Next you will need:
 
 3. run this script
 `apt install -y curl && sh -c "$(curl -fsSL https://raw.githubusercontent.com/Y0lan/ot-node-installer/main/more-ri.sh)"`
+---
 
 ### 4. SETUP OH MY ZSH / VIM FOR THE NEW USER
 #### Install oh-my-zsh + theme your shell + theme vim + reboot to finalize step 3
 
 `sh -c "$(curl -fsSL https://raw.githubusercontent.com/Y0lan/ot-node-installer/main/custom-profile.sh)" && sudo reboot`
 
+---
 ### 5. SETUP THE NODE
 **You can SSH with login : user-\<your hostname>@ip**
 
@@ -92,7 +94,8 @@ Once the information are in the script, run it...
 
 `./setup-node.sh`
 
-### 5. LAUNCH THE NODE
+---
+### 6. LAUNCH THE NODE
 `sh -c "$(curl -fsSL https://raw.githubusercontent.com/Y0lan/ot-node-installer/main/backup-start.sh)"`
 
 💰💰💰💰💰💰💰💰💰💰💰💰
