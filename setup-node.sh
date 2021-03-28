@@ -8,6 +8,9 @@ HOLDING_TIME=215000 # 6 MONTHS
 
 # The lower the value, the less paid jobs you are willing to accept (RECOMMENDED < 1)
 DH_PRICE_FACTOR=0.1
+
+# YOUR IP ADDRESS
+IP_HOST=$(curl ipinfo.io/ip)
 ###############################################
 
 
@@ -26,8 +29,6 @@ NODE_PRIVATE_KEY=0
 MANAGEMENT_WALLET_PUBLIC=0
 # THE AMOUNT OF XTRAC ON THE NODE ADDRESS
 INITIAL_DEPOSIT_AMOUNT=0
-# YOUR IP ADDRESS
-IP_HOST=0
 
 #############################################
 
@@ -61,7 +62,6 @@ check_vars(){
     check_var $NODE_PRIVATE_KEY "Please enter your node private address"
     check_var $MANAGEMENT_WALLET_PUBLIC "Please enter your management wallet public address"
     check_var $INITIAL_DEPOSIT_AMOUNT "Please enter a deposit amount > 0 or deposit XTRAC (5000 / 6000)"
-    check_var $IP_HOST "Please enter your server IP address"
 }
 
 verify_config_file(){
