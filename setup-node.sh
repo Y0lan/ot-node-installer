@@ -1,25 +1,20 @@
 #!/bin/bash
 
+CONFIG_FILE=$HOME/.origintrail_noderc 
+BACKUP_FOLDER=$HOME/backup-$HOSTNAME
+# YOUR IP ADDRESS
+IP_HOST=$(curl ipinfo.io/ip)
 
 
-########### NODE CONFIGURATION ################
+
+########### NODE CONFIGURATION (DEFAULT) ################
 # MAX JOB TIME
 HOLDING_TIME=215000 # 6 MONTHS
 
 # The lower the value, the less paid jobs you are willing to accept (RECOMMENDED < 1)
 DH_PRICE_FACTOR=0.1
 
-# YOUR IP ADDRESS
-IP_HOST=$(curl ipinfo.io/ip)
-###############################################
-
-
 ########## CHANGE THIS #######################
-
-
-CONFIG_FILE=$HOME/.origintrail_noderc 
-BACKUP_FOLDER=$HOME/backup-$HOSTNAME
-
 
 # NODE PUBLIC ADDRESS
 NODE_PUBLIC=0
