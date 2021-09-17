@@ -17,5 +17,14 @@
      },
    "initial_deposit_amount": "INITIAL_DEPOSIT_AMOUNT",
    "dh_max_holding_time_in_minutes": HOLDING_TIME,
-   "dh_maximum_dataset_filesize_in_mb": 10
+   "dh_maximum_dataset_filesize_in_mb": 10,
+   "dataset_pruning": {
+      "enabled": true,
+      "imported_pruning_delay_in_minutes": 1440,
+      "replicated_pruning_delay_in_minutes": 1440,
+      "low_estimated_value_datasets": {
+        "enabled": true,
+        "minimum_free_space_percentage": 50
+      }
+    }
 }
