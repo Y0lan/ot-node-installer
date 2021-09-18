@@ -70,8 +70,6 @@ installBasicSoftware(){
     systemctl start unattended-upgrades
 
     curl https://raw.githubusercontent.com/Y0lan/ot-node-installer/main/config/50unattended-upgrades > /etc/apt/apt.conf.d/50unattended-upgrades
-    curl https://raw.githubusercontent.com/Y0lan/ot-node-installer/main/config/20auto-upgrades > /etc/apt/apt.conf.d/20auto-upgrades
-
 
 
 
