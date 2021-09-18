@@ -1,4 +1,8 @@
 # AMAZING OT NODE INSTALLER
+soon to be added: 
+
+telegram notification for storage space
+automatic security update
 
 ## PERFECT SERVER WITH
 ### USER COMFORT
