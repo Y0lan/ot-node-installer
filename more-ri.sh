@@ -125,6 +125,7 @@ setupServer(){
     setupZSH
     setupFirewall
     setupFail2Ban
+    unattended-upgrades --dry-run --debug
 }
 
 setupFirewall(){
