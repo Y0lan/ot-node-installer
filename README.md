@@ -1,10 +1,8 @@
 # AMAZING OT NODE INSTALLER
 soon to be added: 
 
-telegram notification for storage space &
-automatic security update
-
 ## PERFECT SERVER WITH
+#### OPTIMIZED NODE CONFIG FILE FOR MAXIMUM JOBS !
 ### USER COMFORT
 #### OH MY ZSH
 ![](https://blog.amd-nick.me/content/images/2018/12/logo-ohmyzsh-ce68f7c0711473bb619d23b1ce1e3a6e53895cd7cc56eb8af57d8076d1928759.png)
@@ -17,7 +15,7 @@ automatic security update
 ![vim](https://i.imgur.com/emovGze.png "vim")
 
 ### SERVER SECURITY
-
+- AUTOMATIC SECURITY UPDATE
 - NO ROOT LOGIN
 - USER WITH SUDO 
 - FIREWALL TO BLOCK ALL NON ESSENTIAL PORT
