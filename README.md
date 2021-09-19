@@ -1,6 +1,4 @@
 # AMAZING OT NODE INSTALLER
-soon to be added: 
-
 ## PERFECT SERVER WITH
 #### OPTIMIZED NODE CONFIG FILE FOR MAXIMUM JOBS !
 ### USER COMFORT
@@ -101,6 +99,8 @@ Once the information are in the script, run it...
 `sh -c "$(curl -fsSL https://raw.githubusercontent.com/Y0lan/ot-node-installer/main/backup-start.sh)"`
 
 💰💰💰💰💰💰💰💰💰💰💰💰
+
+Next you can add your node into https://othub.origin-trail.network and get telegram notification for each of your job!
 
 
 
