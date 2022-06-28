@@ -3,7 +3,7 @@
 configureOhMyZSH(){
     git clone https://github.com/jotyGill/quickz-sh.git
     cd quickz-sh
-    ./quickz.sh -c
+    ./install.sh -c
 }
 
 configureVim(){
