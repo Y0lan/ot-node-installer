@@ -147,7 +147,7 @@ addSudoTo(){
 }
 
 createUser(){
-    username="user-$(hostname)"
+    username="yolan"
     message "CREATING USER $username"
     adduser --disabled-password --gecos "" "$username" 
     finish
