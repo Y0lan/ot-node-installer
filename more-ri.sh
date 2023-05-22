@@ -6,7 +6,7 @@ generateRandomSalt(){
 } 
 
 changeAccountToUser(){
-    su - "yolan" 
+    su - "dev" 
 }
 
 
@@ -23,7 +23,7 @@ installDocker(){
         apt update
         apt-cache policy docker-ce
         apt install -y docker-ce
-        usermod -aG docker "yolan"
+        usermod -aG docker "dev"
         systemctl start docker
         systemctl enable docker
 }
@@ -93,7 +93,7 @@ setupFail2Ban(){
 }
 
 setupZSH(){
-    username="yolan"
+    username="dev"
     message "ADDING ZSH AS DEFAULT SHELL FOR $username"
     chsh -s $(which zsh) "$username"
     touch /home/$username/.zshrc
@@ -147,7 +147,7 @@ addSudoTo(){
 }
 
 createUser(){
-    username="yolan"
+    username="dev"
     message "CREATING USER $username"
     adduser --disabled-password --gecos "" "$username" 
     finish
