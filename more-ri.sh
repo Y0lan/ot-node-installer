@@ -6,7 +6,7 @@ generateRandomSalt(){
 } 
 
 changeAccountToUser(){
-    su - "user-$(hostname)" 
+    su - "yolan" 
 }
 
 
@@ -23,7 +23,7 @@ installDocker(){
         apt update
         apt-cache policy docker-ce
         apt install -y docker-ce
-        usermod -aG docker "user-$(hostname)"
+        usermod -aG docker "yolan"
         systemctl start docker
         systemctl enable docker
 }
@@ -93,7 +93,7 @@ setupFail2Ban(){
 }
 
 setupZSH(){
-    username="user-$(hostname)"
+    username="yolan"
     message "ADDING ZSH AS DEFAULT SHELL FOR $username"
     chsh -s $(which zsh) "$username"
     touch /home/$username/.zshrc
